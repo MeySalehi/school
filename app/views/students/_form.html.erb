@@ -1,0 +1,58 @@
+<%= form_for(@student) do |f| %>
+<div class="form-group">
+	<%= f.label :fisrt_name, "نام" %>
+	<%= f.text_field :first_name, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :last_name, "نام خانوادگی" %>
+	<%= f.text_field :last_name, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :middle_name, "نام پدر" %>
+	<%= f.text_field :middle_name, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :birth_date, "تاریخ تولد" %>
+	<%= f.text_field :birth_date, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :address, "آدرس منزل" %>
+	<%= f.text_field :address, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :phone, "شماره تلفن" %>
+	<%= f.phone_field :phone, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :id_number, "شماره شناسنامه" %>
+	<%= f.text_field :id_number, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :description, "توضیحات" %>
+	<%= f.text_area :description, class: "form-control" %>
+</div>
+<div class="form-group">
+	<%= f.label :classroom_id, "نام کلاس: " %>
+	<% if !@classroom.blank? %>
+		<h3 class="form-control"><%= @classroom.name %></h3>
+		<%= f.hidden_field :classroom_id, value: @classroom.id %>
+	<% else %>
+		<%= f.select(:classroom_id, class: "form-control") do %>
+			<% @classrooms.each do |c| %>
+				<% if @student.classroom.id == c.id %>
+					<%= content_tag(:option, c.name, value: c.id, selected: "selected") %>
+				<% else %>
+					<%= content_tag(:option, c.name, value: c.id) %>
+				<% end %>					
+			<% end %>
+		<% end %>
+	<% end %>
+</div>
+<div class="form-group">
+	<%= f.label :avatar, "انتخاب عکس:" %>
+	<%= f.file_field :avatar, class: "col-sm-6 col-sm-offset-6" %>
+</div>
+<div class="form-group">
+	<%= f.submit "ثبت", class: "btn btn-primary form-control", style: "margin-top:15px;" %>
+</div>
+<% end %>

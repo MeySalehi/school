@@ -1,0 +1,58 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<div class="row">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h1 class="panel-title pull-right" >کلاس <%= @classroom.name %></h1>
+					<div class="btn-toolbar">
+					<div class="btn-group pull-left" role="group">
+					  <%= link_to "حذف کلاس","#", class: "btn btn-group btn-danger btn-sm", role: "button", style:"border-radius: 4px 0px 0px 4px"%>
+					  <%= link_to "تغییر", edit_classroom_path(@classroom.id), class: "btn btn-warning btn-sm", role: "button" %>
+					  <%= link_to "صدور کارنامه", "#", class: "btn btn-success btn-sm", role: "button" %>
+					  <%= link_to "افزودن دانش‌آموز جدید", new_classroom_student_path(classroom_id: @classroom.id), class: "btn btn-sm btn-primary" , style:"border-radius: 0px 4px 4px 0px"%>
+					</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="panel-body">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-6 col-md-6">
+								<span>نام آموزگار: <%= link_to @classroom.teacher.first_name + " " + @classroom.teacher.last_name, user_path(@classroom.teacher.id)%></span>
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<span>تعداد دانش آموزان: <b><%= @classroom.students.count %></b> نفر</span>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="panel panel-default" style="border-top: 3px solid #428bca">
+			  <div class="panel-body">
+			    <table class="table table-hover">
+				    <tr class="active">
+				    	<td>#</td>
+				    	<td>نام و نام خانوادگی</td>
+				    	<td>نام پدر</td>
+				    	<td>شماره دانش‌آموزی</td>
+			    	</tr>
+			    	<% i = 0 %>
+			    	<% @classroom.students.each do |student| %>
+			    	<% i = i + 1 %>
+			    	<tr>
+			    		<td><b><%= i %></b></td>
+			    		<td><%= link_to student.first_name + " " + student.last_name, classroom_student_path(classroom_id: @classroom.id, id: student.id) %></td>
+			    		<td><%= student.middle_name %></td>
+			    		<td><%= student.id_number %></td>
+			    	</tr>
+			    	<% end %>
+			    </table>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>

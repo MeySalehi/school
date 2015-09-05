@@ -1,0 +1,42 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" > 
+		<div class="row">
+			<% @classrooms.each do |classroom| %>
+				<div class="panel panel-default" >
+					<div class="panel-heading">
+						<%= link_to "امتحان جدید", new_classroom_exam_path(classroom.id), class: "btn btn-sm btn-primary pull-left", role: "button" %>
+						<h2 class="panel-title pull-rirgt" ><%= link_to "کلاس " + classroom.name, classroom_path(classroom.id) %></h2>
+						<div class="clearfix"></div>
+					</div>
+					<div class="panel-body">
+						<div class="table" >
+							<table class="table table-hover">
+								<tr class="active">
+									<td>#</td>
+									<td>نام درس</td>
+									<td>نام امتحان</td>
+									<td>تاریخ برگزاری</td>
+									<td>میانگین نمره</td>
+								</tr>
+								<% i = 0 %>
+								<% classroom.exams.each do |exam| %>
+								<% i = i + 1 %>
+								<tr>
+									<td><%= i %></td>
+									<td><%= link_to exam.course_name, classroom_exam_path(classroom_id: exam.classroom.id, id: exam.id) %></td>
+									<td><%= exam.title %></td>
+									<td><%= exam.exam_date %></td>
+									<td><%= exam.exam_results.average(:result) %></td>
+								</tr>
+								<% end %>
+							</table>
+						</div>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>

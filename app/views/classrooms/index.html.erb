@@ -1,0 +1,49 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<% if !flash[:info].blank? %>
+			<div class="row">
+				<div class="alert alert-info" role="alert"><%= flash[:info] %></div>
+			</div>
+		<% end %>
+		<div class="row">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header navbar-right">
+						<div class="nav navbar-nav ">
+						<%= link_to "کلاس جدید", new_classroom_path, class: "btn btn-primary navbar-btn" %>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="panel panel-default" style="border-top: 3px solid #428bca">
+			<div class="panel-body">
+				<div class="table">
+					<table class="table table-hover">
+						<tr class="active">
+							<td>#</td>
+							<td>نام کلاس</td>
+							<td>نام آموزگار</td>
+							<td>تعداد دانش‌آموز</td>
+						</tr>
+						<% i = 0 %>
+						<% @classrooms.each do |classroom| %>
+						<% i = i +1 %>
+						<tr>
+							<td><b><%= i %></b></td>
+							<td><%= link_to classroom.name, classroom_path(classroom.id) %></td>
+							<td><%= link_to classroom.teacher.first_name + " " + classroom.teacher.last_name, user_path(classroom.teacher.id) %></td>
+							<td><%= link_to classroom.students.count, classroom_students_path(classroom.id) %></td>
+						</tr>
+						<% end %>
+					</table>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

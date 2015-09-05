@@ -1,0 +1,38 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<div class="panel panel-default">
+			<div class="panel-heading clearfix">
+				<div class="btn-group pull-left" role="group">
+				  <%= link_to "حذف امتحان","#", class: "btn btn-group btn-danger btn-sm", role: "button", style:"border-radius: 4px 0px 0px 4px"%>
+				  <%= link_to "تغییر", edit_classroom_path(@exam.classroom.id), class: "btn btn-warning btn-sm", role: "button", style:"border-radius: 0px 4px 4px 0px" %>
+				</div>
+				<h1 class="panel-title pull-right" ><%= "امتحان " + @exam.title + " درس " + @exam.course_name + " کلاس " + @exam.classroom.name%></h1>
+			</div>
+			<div class="panel-body">
+				<div class="table">
+					<table class="table table-hover">
+						<tr class="active">
+							<td>#</td>
+							<td>نام دانش‌آموز</td>
+							<td>نمره</td>
+							<td>توضیحات</td>
+						</tr>
+						<% i = 0 %>
+						<% @results.each do |result| %>
+						<% i = i + 1 %>
+							<tr>
+								<td><%= i %></td>
+								<td><%= result.student.first_name + " " + result.student.last_name %></td>
+								<td><%= result.result %></td>
+								<td><%= result.description %></td>
+							</tr>
+						<% end %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

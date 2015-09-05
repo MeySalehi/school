@@ -1,0 +1,46 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<div class="row">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header navbar-right">
+						<div class="nav navbar-nav ">
+						<%= link_to "دانش‌آموز جدید", new_student_path, class: "btn btn-primary navbar-btn" %>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="panel panel-default" style="border-top: 3px solid #428bca">
+				<div class="panel-body">
+					<table class="table table-hover">
+						<tr class="active">
+							<td>#</td>
+							<td>نام و نام خانوادگی</td>
+							<td>نام پدر</td>
+							<td>کلاس</td>
+							<td>آموزگار</td>
+							<td>شماره‌ی شناسنامه</td>
+						</tr>
+						<% i = 0 %>
+						<% @students.each do |student| %>
+						<% i = i + 1 %>
+						<tr>
+							<td><b><%=i%></b></td>
+							<td><%= link_to student.first_name + " " +  student.last_name, classroom_student_path(classroom_id: student.classroom.id, id: student.id) %></td>
+							<td><%= student.middle_name %></td>
+							<td><%= student.classroom.name %></td>
+							<td><%= student.classroom.teacher.first_name + " "+ student.classroom.teacher.last_name%></td>
+							<td><%= student.id_number %></td>
+						</tr>
+						<% end %>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

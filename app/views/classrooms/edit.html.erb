@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<% if !flash[:error].blank? %>
+			<div class="alert alert-danger" role="alert"><%= flash[:error] %></div>
+		<% end %>
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">تغییر کلاس</h3>
+			</div>
+			<div class="panel-body">
+				<%= render "form"%>
+			</div>
+		</div>
+	</div>
+</div>
