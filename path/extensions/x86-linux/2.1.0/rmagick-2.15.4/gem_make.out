@@ -1,0 +1,272 @@
+/usr/bin/ruby2.1 extconf.rb
+checking for gcc... yes
+checking for Magick-config... no
+checking for pkg-config... yes
+checking for outdated ImageMagick version (<= 6.4.9)... no
+checking for Ruby version >= 1.8.5... yes
+checking for stdint.h... yes
+checking for sys/types.h... yes
+checking for wand/MagickWand.h... yes
+checking for snprintf() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AcquireImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AffinityImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AffinityImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AutoGammaImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AutoLevelImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for BlueShiftImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ColorMatrixImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ConstituteComponentTerminus() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DeskewImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DestroyConstitute() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EncipherImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EqualizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for EvaluateImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for FloodfillPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for FunctionImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetAuthenticIndexQueue() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetMagickFeatures() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for GetVirtualPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelImageColors() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelColorsImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LevelizeImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for LiquidRescaleImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for MagickLibAddendum() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for OpaquePaintImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for QueueAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemapImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemapImages() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RemoveImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RotationalBlurImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for RotationalBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SelectiveBlurImageChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetImageAlphaChannel() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetImageArtifact() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SetMagickMemoryMethods() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SparseColorImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for StatisticImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for SyncAuthenticPixels() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransformImageColorspace() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransparentPaintImage() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for TransparentPaintImageChroma() in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for QueryMagickColorname() new signature... yes
+checking for Image.type in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.kerning in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interline_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DrawInfo.interword_spacing in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for DitherMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for MagickFunction in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for ImageLayerMethod in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for long double in assert.h,ctype.h,stdio.h,stdlib.h,math.h,time.h,stdint.h,sys/types.h,wand/MagickWand.h... yes
+checking for AlphaChannelType.CopyAlphaChannel... yes
+checking for AlphaChannelType.BackgroundAlphaChannel... yes
+checking for AlphaChannelType.RemoveAlphaChannel... yes
+checking for CompositeOperator.BlurCompositeOp... yes
+checking for CompositeOperator.DistortCompositeOp... yes
+checking for CompositeOperator.LinearBurnCompositeOp... yes
+checking for CompositeOperator.LinearDodgeCompositeOp... yes
+checking for CompositeOperator.MathematicsCompositeOp... yes
+checking for CompositeOperator.PegtopLightCompositeOp... yes
+checking for CompositeOperator.PinLightCompositeOp... yes
+checking for CompositeOperator.VividLightCompositeOp... yes
+checking for CompressionType.DXT1Compression... yes
+checking for CompressionType.DXT3Compression... yes
+checking for CompressionType.DXT5Compression... yes
+checking for CompressionType.ZipSCompression... yes
+checking for CompressionType.PizCompression... yes
+checking for CompressionType.Pxr24Compression... yes
+checking for CompressionType.B44Compression... yes
+checking for CompressionType.B44ACompression... yes
+checking for DistortImageMethod.BarrelDistortion... yes
+checking for DistortImageMethod.BarrelInverseDistortion... yes
+checking for DistortImageMethod.BilinearForwardDistortion... yes
+checking for DistortImageMethod.BilinearReverseDistortion... yes
+checking for DistortImageMethod.DePolarDistortion... yes
+checking for DistortImageMethod.PolarDistortion... yes
+checking for DistortImageMethod.PolynomialDistortion... yes
+checking for DistortImageMethod.ShepardsDistortion... yes
+checking for DitherMethod.NoDitherMethod... yes
+checking for FilterTypes.KaiserFilter... yes
+checking for FilterTypes.WelshFilter... yes
+checking for FilterTypes.ParzenFilter... yes
+checking for FilterTypes.LagrangeFilter... yes
+checking for FilterTypes.BohmanFilter... yes
+checking for FilterTypes.BartlettFilter... yes
+checking for FilterTypes.SentinelFilter... yes
+checking for MagickEvaluateOperator.PowEvaluateOperator... yes
+checking for MagickEvaluateOperator.LogEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdBlackEvaluateOperator... yes
+checking for MagickEvaluateOperator.ThresholdWhiteEvaluateOperator... yes
+checking for MagickEvaluateOperator.GaussianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.ImpulseNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.LaplacianNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.MultiplicativeNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.PoissonNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.UniformNoiseEvaluateOperator... yes
+checking for MagickEvaluateOperator.CosineEvaluateOperator... yes
+checking for MagickEvaluateOperator.SineEvaluateOperator... yes
+checking for MagickEvaluateOperator.AddModulusEvaluateOperator... yes
+checking for MagickFunction.ArcsinFunction... yes
+checking for MagickFunction.ArctanFunction... yes
+checking for MagickFunction.PolynomialFunction... yes
+checking for MagickFunction.SinusoidFunction... yes
+checking for ImageLayerMethod.FlattenLayer... yes
+checking for ImageLayerMethod.MergeLayer... yes
+checking for ImageLayerMethod.MosaicLayer... yes
+checking for ImageLayerMethod.TrimBoundsLayer... yes
+checking for VirtualPixelMethod.HorizontalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileVirtualPixelMethod... yes
+checking for VirtualPixelMethod.HorizontalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.VerticalTileEdgeVirtualPixelMethod... yes
+checking for VirtualPixelMethod.CheckerTileVirtualPixelMethod... yes
+checking for ruby/io.h... yes
+checking for rb_frame_this_func() in ruby.h,ruby/io.h... yes
+creating extconf.h
+creating Makefile
+
+
+======================================================================
+Sat 29Aug15 12:27:31
+This installation of RMagick 2.15.4 is configured for
+Ruby 2.1.2 (i386-linux-gnu) and ImageMagick 6.8.9
+======================================================================
+
+
+Configured compile options: {:magick_config=>false, :pkg_config=>true, :magick_version=>"6.8.9", :local_libs=>" -lMagickCore-6.Q16 ", :cflags=>" -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/i386-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 ", :cppflags=>" -fopenmp -DMAGICKCORE_HDRI_ENABLE=0 -DMAGICKCORE_QUANTUM_DEPTH=16 -I/usr/include/i386-linux-gnu//ImageMagick-6 -I/usr/include/ImageMagick-6 ", :ldflags=>" -lMagickCore-6.Q16 ", :defs=>[], :config_h=>"Makefile rmagick.h"}
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling rmimage.c
+rmimage.c: In function ‘Image_color_flood_fill’:
+rmimage.c:2762:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 5 has type ‘size_t’ [-Wformat=]
+                  , x, y, image->columns, image->rows);
+                  ^
+rmimage.c:2762:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 6 has type ‘size_t’ [-Wformat=]
+rmimage.c: In function ‘Image_constitute’:
+rmimage.c:3962:5: warning: ‘ConstituteComponentTerminus’ is deprecated (declared at /usr/include/ImageMagick-6/magick/deprecate.h:328) [-Wdeprecated-declarations]
+     DestroyConstitute();
+     ^
+rmimage.c: In function ‘Image_display’:
+rmimage.c:5004:9: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+         rb_raise(rb_eArgError, "invalid image geometry (%lux%lu)", image->rows, image->columns);
+         ^
+rmimage.c:5004:9: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+rmimage.c: In function ‘Image_extent’:
+rmimage.c:5999:22: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 5 has type ‘ssize_t’ [-Wformat=]
+                      , width, height, geometry.x, geometry.y);
+                      ^
+rmimage.c:5999:22: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 6 has type ‘ssize_t’ [-Wformat=]
+rmimage.c: In function ‘build_inspect_string’:
+rmimage.c:7405:9: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+         x += sprintf(buffer+x, "[%lu]", image->scene);
+         ^
+rmimage.c:7415:13: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+             x += sprintf(buffer+x, "%lux%lu=>", image->magick_columns, image->magick_rows);
+             ^
+rmimage.c:7415:13: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+rmimage.c:7419:5: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+     x += sprintf(buffer+x, "%lux%lu ", image->columns, image->rows);
+     ^
+rmimage.c:7419:5: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+rmimage.c:7426:22: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                      , image->page.x, image->page.y);
+                      ^
+rmimage.c:7426:22: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+rmimage.c:7426:22: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 5 has type ‘ssize_t’ [-Wformat=]
+rmimage.c:7426:22: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 6 has type ‘ssize_t’ [-Wformat=]
+rmimage.c:7436:17: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                 x += sprintf(buffer+x, "%lumc ", image->total_colors/1024/1024);
+                 ^
+rmimage.c:7442:21: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                     x += sprintf(buffer+x, "%lukc ", image->total_colors/1024);
+                     ^
+rmimage.c:7446:21: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                     x += sprintf(buffer+x, "%luc ", image->total_colors);
+                     ^
+rmimage.c:7462:26: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                          , (long)image->colors);
+                          ^
+rmimage.c: In function ‘Image_matte_flood_fill’:
+rmimage.c:8663:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 5 has type ‘size_t’ [-Wformat=]
+                  , x, y, image->columns, image->rows);
+                  ^
+rmimage.c:8663:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 6 has type ‘size_t’ [-Wformat=]
+rmimage.c: In function ‘Image_recolor’:
+rmimage.c:10828:7: warning: return makes integer from pointer without a cast
+       return((Image *) NULL);
+       ^
+In file included from /usr/include/ruby-2.1.0/ruby.h:33:0,
+                 from rmagick.h:31,
+                 from rmimage.c:13:
+rmimage.c: In function ‘Image_sparse_color’:
+/usr/include/ruby-2.1.0/ruby/ruby.h:511:57: warning: initialization from incompatible pointer type
+     __extension__ ({volatile VALUE *rb_gc_guarded_ptr = (ptr); rb_gc_guarded_ptr;})
+                                                         ^
+/usr/include/ruby-2.1.0/ruby/ruby.h:523:26: note: in expansion of macro ‘RB_GC_GUARD_PTR’
+ #define RB_GC_GUARD(v) (*RB_GC_GUARD_PTR(&(v)))
+                          ^
+rmimage.c:12690:5: note: in expansion of macro ‘RB_GC_GUARD’
+     RB_GC_GUARD(args);
+     ^
+rmimage.c: In function ‘Image_texture_flood_fill’:
+rmimage.c:13176:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 5 has type ‘size_t’ [-Wformat=]
+                  , x, y, image->columns, image->rows);
+                  ^
+rmimage.c:13176:18: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 6 has type ‘size_t’ [-Wformat=]
+rmimage.c: In function ‘Image_to_blob’:
+rmimage.c:13622:22: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+                      , image->columns, image->rows, magick_info->name);
+                      ^
+rmimage.c:13622:22: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+compiling rmpixel.c
+compiling rmenum.c
+compiling rmmontage.c
+compiling rmutil.c
+compiling rmfill.c
+compiling rmdraw.c
+compiling rmagick.c
+compiling rmilist.c
+compiling rmmain.c
+rmmain.c: In function ‘test_Magick_version’:
+rmmain.c:1652:36: warning: passing argument 1 of ‘GetMagickVersion’ from incompatible pointer type
+     version_str = GetMagickVersion(&version_number);
+                                    ^
+In file included from /usr/include/ImageMagick-6/magick/module.h:22:0,
+                 from /usr/include/ImageMagick-6/magick/MagickCore.h:121,
+                 from rmagick.h:47,
+                 from rmmain.c:15:
+/usr/include/ImageMagick-6/magick/version.h:89:4: note: expected ‘size_t *’ but argument is of type ‘long unsigned int *’
+   *GetMagickVersion(size_t *);
+    ^
+compiling rmstruct.c
+rmstruct.c: In function ‘Color_to_s’:
+rmstruct.c:381:19: warning: format ‘%g’ expects argument of type ‘double’, but argument 5 has type ‘MagickRealType’ [-Wformat=]
+                   ci.color.red, ci.color.green, ci.color.blue, ci.color.opacity);
+                   ^
+rmstruct.c:381:19: warning: format ‘%g’ expects argument of type ‘double’, but argument 6 has type ‘MagickRealType’ [-Wformat=]
+rmstruct.c:381:19: warning: format ‘%g’ expects argument of type ‘double’, but argument 7 has type ‘MagickRealType’ [-Wformat=]
+rmstruct.c:381:19: warning: format ‘%g’ expects argument of type ‘double’, but argument 8 has type ‘MagickRealType’ [-Wformat=]
+rmstruct.c: In function ‘Font_to_s’:
+rmstruct.c:606:13: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+             sprintf(weight, "%lu", ti.weight);
+             ^
+rmstruct.c: In function ‘RectangleInfo_to_s’:
+rmstruct.c:822:11: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘size_t’ [-Wformat=]
+           , rect.width, rect.height, rect.x, rect.y);
+           ^
+rmstruct.c:822:11: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 4 has type ‘size_t’ [-Wformat=]
+rmstruct.c:822:11: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 5 has type ‘ssize_t’ [-Wformat=]
+rmstruct.c:822:11: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 6 has type ‘ssize_t’ [-Wformat=]
+compiling rminfo.c
+rminfo.c: In function ‘Info_scene_eq’:
+rminfo.c:2017:5: warning: format ‘%ld’ expects argument of type ‘long int’, but argument 4 has type ‘size_t’ [-Wformat=]
+     (void) snprintf(buf, sizeof(buf), "%-ld", info->scene);
+     ^
+linking shared-object RMagick2.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 RMagick2.so ./.gem.20150829-13038-1el1d0b
+installing default RMagick2 libraries
