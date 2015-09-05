@@ -1,5 +1,24 @@
 Rails.application.routes.draw do
-	root "users#index"
+
+	resources :users
+	resources :students, only: ["index", "new", "edit", "create", "update", "show"]
+	
+	resources :classrooms do
+		resources :students do
+			resources :results, only: ["show", "edit", "update"]
+			get "export" => "results#export" ,on: :member
+		end
+		get "export" => "results#export" ,on: :member
+		resources :exams
+	end
+  resources :settings, only: ["index", "show", "edit", "update"]
+	resources :exams, only: ["index", "create", "update"]
+
+	root "authenticate#dashboard"
+  get "login" => "authenticate#login"
+	post "login" => "authenticate#attempt_login"
+	get "logout" => "authenticate#logout"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
