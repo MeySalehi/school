@@ -1,3 +1,5 @@
+
+<div class="col-sm-6 pull-right">
 <%= form_for(@classroom) do |f| %>
 	<div class="form-group">
 	<%= f.label(:name, "نام کلاس")%>
@@ -16,5 +18,6 @@
 	<%= f.text_field :courses_name, class: "form-control" %>
 	<span id="helpBlock" class="help-block">نام دروس را با & از هم جدا کنید و از فاصله استفاده نکنید، این شیوه موقت است.</span>
 	</div>
-	<%= f.submit "ثبت", class: "btn btn-primary" %>
-<% end %> 
+	<%= f.submit "ثبت", class: "btn btn-primary form-control" %>
+<% end %>
+</div>
