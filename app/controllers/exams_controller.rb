@@ -46,12 +46,13 @@ class ExamsController < ApplicationController
 	end
 	#-------------------------------------------------
 	def new
+		@classroom = Classroom.find_by(id: params[:classroom_id])
 		@students = Student.where(classroom_id: params[:classroom_id])
-		if !@students.blank?
+		if !@classroom.blank?
 			@exam = Exam.new
 			@students.count.times {@exam.exam_results.build}
 		else
-			return redirect_to classroom_exams_path(params[:classroom_id])
+			return missing_page
 		end
 	end
 	#-------------------------------------------------
