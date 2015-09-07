@@ -3,8 +3,44 @@
 		<%= render 'sidebar' %>
 	</div>
 	<div class="col-lg-9 col-md-9" >
-		<% if !flash[:info].blank? %>
-			<div class="alert alert-info" role="alert"><%= flash[:info] %></div>
-		<% end %>
+		<div class="row">
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header navbar-right">
+						<div class="nav navbar-nav ">
+						<%= link_to "کاربر جدید", new_user_path, class: "btn btn-primary navbar-btn" %>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<div class="row">
+			<div class="panel panel-default" style="border-top: 3px solid #428bca">
+				<div class="panel-body">
+					<div class="table">
+						<table class="table table-hover">
+							<tr class="active">
+								<td>#</td>
+								<td>نام و نام‌خانوادگی</td>
+								<td>ایمیل</td>
+								<td>مسئولیت</td>
+								<td>سطح دسترسی</td>
+							</tr>
+							<% i = 0 %>
+							<% @users.each do |user| %>
+							<% i = i + 1 %>
+							<tr>
+								<td><%= i %></td>
+								<td><%= link_to user.first_name + " " + user.last_name, user_path(user.id) %></td>
+								<td><%= user.email %></td>
+								<td><%= user.role %></td>
+								<td><%= user.access_level.capitalize %></td>
+							</tr>
+							<% end %>
+						</table>
+					</div>
+				</div>
+			</div>			
+		</div>
 	</div>
 </div>

@@ -1,0 +1,47 @@
+<div class="container">
+	<div class="col-lg-3 col-md-3">
+		<%= render 'sidebar' %>
+	</div>
+	<div class="col-lg-9 col-md-9" >
+		<div class="panel panel-default">
+			<div class="panel-heading clearfix">
+				<h1 class="panel-title pull-right">مشخصات کاربر</h1>
+				<div class="btn-group pull-left">
+					<%= link_to "حذف کاربر", "#", class: "btn btn-sm btn-danger", role: "button", style:"border-radius: 4px 0px 0px 4px" %>		
+					<%= link_to "تغییر", edit_user_path(@user.id), class: "btn btn-sm btn-warning", role: "button", style:"border-radius: 0px 4px 4px 0px" %>
+				</div>
+			</div>
+			<div class="panel-body">
+				<div class="row">
+					<div class="col-sm-2">
+						<%= image_tag @user.avatar,class: "img-rounded", style: "width:100%;height:auto;max-width:150px;margin-bottom:15px" %>
+					</div>
+					<div class="col-sm-5">
+						<ul class="list-group">
+							<li class="list-group-item">مسئولیت: <%= @user.role %></li>
+							<li class="list-group-item">سطح دسترسی: <%= @user.access_level %></li>
+							<li class="list-group-item">تاریخ عضویت: <%= Date.parse(@user.created_at.to_s)%></li>
+						</ul>
+					</div>
+					<div class="col-sm-5">
+						<ul class="list-group">
+							<li class="list-group-item">نام: <strong><%= @user.first_name %></strong></li>
+							<li class="list-group-item">نام‌خانوادگی: <strong><%= @user.last_name %></strong></li>
+							<li class="list-group-item">ایمیل: <%= mail_to @user.email %></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 pull-right">
+						<div class="list-group">
+							<div class="list-group-item">
+							<h4 class="list-group-item-heading">درباره:</h4>
+							<p class="list-group-itemtext"><%= @user.bio %></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
