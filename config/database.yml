@@ -21,7 +21,7 @@ test:
   database: db/test.sqlite3
 
 production:
-  adapter: postgresql
+  adapter: pg
   pool: 5
   timeout: 5000
   database: school
