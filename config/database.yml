@@ -27,4 +27,4 @@ production:
   database: school
   username: adminruuyjaj
   password: ZG29jxqngveQ
-  url: $OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT
+  host: $OPENSHIFT_POSTGRESQL_DB_HOST:$OPENSHIFT_POSTGRESQL_DB_PORT
