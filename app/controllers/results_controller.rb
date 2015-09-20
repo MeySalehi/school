@@ -10,21 +10,21 @@ class ResultsController < ApplicationController
 	end
 	#-------------------------------------------------
 	def show
-		@result = Exam_result.find_by(id: params[:id].to_i)
+		@result = ExamResult.find_by(id: params[:id].to_i)
 		if @result.blank?
 			return missing_page
 		end
 	end
 	#-------------------------------------------------
 	def edit
-		@result = Exam_result.find_by(id: params[:id].to_i)
+		@result = ExamResult.find_by(id: params[:id].to_i)
 		if @result.blank?
 			return missing_page
 		end
 	end
 	#-------------------------------------------------
 	def update
-		@result = Exam_result.find_by(id: params[:id].to_i)
+		@result = ExamResult.find_by(id: params[:id].to_i)
 		if !@result.blank?
 			if @result.update(result_params)
 				flash[:notice] = "اطلاعات با موفقیت بروزرسانی شد."

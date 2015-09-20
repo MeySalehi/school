@@ -59,7 +59,8 @@ class ExamsController < ApplicationController
 	def create
 		@exam_params = new_results_params
 
-		if new_exam = Exam.create!(new_results_params)
+		if new_exam = Exam.create!(@exam_params)
+			@exam_params[:exam_results_attributes].each {|id,param| ExamResult.create(param)}
 			return redirect_to classroom_exam_path(classroom_id: new_exam.classroom.id, id: new_exam.id)
 		else
 			return redirect_to new_classroom_exam_path(classroom_id: new_exam.classroom.id)
@@ -87,6 +88,6 @@ class ExamsController < ApplicationController
 		end
 		def new_results_params
 			params.require(:exam).permit(:title, :exam_date, :score_range, :course_name, :description, :classroom_id,
-																	exam_results_aattributes: [:exam_id, :student_id, :result, :description])
+																	exam_results_attributes: [:exam_id, :student_id, :result, :description])
 		end
 end
